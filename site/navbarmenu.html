@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Menu</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin-top: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-image: url("bak2.jpg");
+            background-size: 100%;
+        }
+
+        .container {
+
+            margin: auto;
+            overflow: auto;
+        }
+
+        .navbar-link {
+            float: right;
+        }
+
+        .navbar-link li {
+            display: inline-block;
+            margin-right: 20px;
+            margin-top: 70px;
+            font-size: 25px;
+        }
+
+        .navbar-link li a {
+
+            text-decoration: none;
+            color: white;
+        }
+       
+
+        .navbar-link li a:hover {
+            color: black;
+        }
+
+        section .content {
+            text-align: center;
+            position: relative;
+            top: 50px;
+        }
+
+        section p {
+            font-size: 2vw;
+            color: white;
+        }
+
+        section h1 {
+            font-size: 4vw;
+            color: white;
+
+
+        }
+        section li{
+            color: white;
+            display: inline-block;
+            margin:20px;
+            padding:5px;
+            font-size: 3vw;
+            border:2px solid white;
+
+
+        }
+        section li a{
+           color:white;
+           text-decoration: none;
+           padding:8px;
+
+        }
+        section li a:hover{
+            background-color: lightgray;
+           
+            color: black;
+            cursor: pointer;
+
+        }
+        
+
+        .burger {
+            width: 30px;
+            height: 30px;
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 25px;
+            right: 50px;
+
+        }
+
+        img {
+            position: relative;
+            top: 0;
+            left: 50px;
+            width: 350px;
+
+
+        }
+
+        .bar {
+
+            height: 8px;
+            width: 100%;
+            margin: 2px;
+            background-color: white;
+        }
+
+        @media screen and (max-width:1200px) {
+            img {
+                width: 250px;
+
+
+            }
+
+            .navbar-link li {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width:800px) {
+            img {
+                width: 200px;
+            }
+
+            .navbar-link li {
+                font-size: 15px;
+            }
+            section li{
+                padding:5px;
+                margin:10px;
+            }
+
+        }
+
+        @media screen and (max-width:600px) {
+            .burger {
+                display: inline-flex;
+
+            }
+
+            .logo {
+                text-align: center;
+            }
+
+            .navbar-link {
+                display: none;
+                width: 100%;
+                text-align: center;
+                padding: auto;
+
+            }
+            .active{
+                display:block;
+            }
+
+            .navbar-link li {
+                display: block;
+                text-align: center;
+                padding-right: 45vw;
+            }
+
+            img {
+                width: 100px;
+                left: 25px;
+            }
+            section li{
+                margin:2px;
+                padding:2px;
+            }
+
+
+
+
+        }
+    </style>
+    <script src="/script.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <a class="burger" id="bt" onclick="my()">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </a>
+        <a href="#" class="imgg"><img src="bbbb.png" alt="logo"></a>
+        <div class="navbar-link active">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="#">Logout</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <section>
+        <div class="content">
+            <h1>WEB DEVELOPMENT COURSES </h1>
+            <p>Build Your Own Website in Minutes By Using:</p>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JAVASCRIPT</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">NODE JS</a></li>
+            </ul>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
